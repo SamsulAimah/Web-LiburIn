@@ -1,6 +1,5 @@
 import React from "react";
-import { Star, Users, Bath, Home } from "lucide-react";
-import MyButton from "../components/Elements/Button";
+import { ArrowRight, Users, Bath, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -51,26 +50,46 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
-      <header className="relative h-[420px] md:h-[460px] lg:h-[520px]">
+      <header className="relative h-[520px] md:h-[460px] lg:h-[520px]">
         <img
           src="villa (2).jpg"
           alt="hero"
           className="absolute inset-0 w-full h-full object-cover brightness-[0.55]"
         />
-        <div className="absolute inset-0 max-w-6xl mx-auto px-6 md:px-12 lg:px-20 flex flex-col justify-center">
-          <span className="text-xl text-orange-500 font-bold mb-3">
+        <div
+          className="
+      absolute inset-0 
+      max-w-6xl mx-auto 
+      px-6 md:px-12 lg:px-20 
+      flex flex-col 
+      justify-start md:justify-center 
+      pt-32 md:pt-0
+    "
+        >
+          <span className="text-base md:text-xl text-orange-500 font-bold mb-3">
             Your accommodation services
           </span>
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
             Anytime and
             <br />
             Anywhere
           </h1>
+
           <p className="text-sm md:text-base text-white/90 max-w-2xl mt-4">
             Hotela is here to make your trip easier. Find your dream hotel with
             the best price, fast process, and the most complete location
             options.
           </p>
+
+          {/* Tombol “Lihat Menu” */}
+          <Link
+            to="/menu"
+            className="mt-6 inline-flex items-center gap-2 bg-orange-500 text-white font-semibold px-5 py-2.5 rounded-md hover:bg-orange-600 transition-all duration-300 w-fit"
+          >
+            Lihat Menu
+            <ArrowRight size={16} />
+          </Link>
         </div>
       </header>
 
