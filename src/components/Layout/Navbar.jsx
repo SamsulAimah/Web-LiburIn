@@ -8,11 +8,14 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 shadow-md">
       {/* === Promo Bar === */}
-      <div className="bg-orange-500 text-white text-center text-sm py-2 flex items-center justify-center gap-2">
-        <span>Don't have an account? To get a 25% discount 🎉</span>
+      <div className="bg-orange-500 text-white text-center text-sm py-2 px-4 sm:px-8 flex flex-wrap items-center justify-center gap-2">
+        <span className="block text-[13px] sm:text-sm">
+          Don't have an account? To get a 25% discount 🎉
+        </span>
+
         <Link
           to="/register"
-          className="bg-white text-orange-500 px-4 py-1 rounded-full text-sm font-bold hover:bg-orange-200 transition flex items-center gap-2"
+          className="bg-white text-orange-500 px-4 py-1 rounded-full text-sm font-bold hover:bg-orange-200 transition flex items-center gap-2 whitespace-nowrap"
         >
           Register
           <svg

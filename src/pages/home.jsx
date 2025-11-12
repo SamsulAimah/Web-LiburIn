@@ -66,7 +66,7 @@ const HomePage = () => {
       pt-32 md:pt-0
     "
         >
-          <span className="text-base md:text-xl text-orange-500 font-bold mb-3">
+          <span className="text-base md:text-xl text-orange-500 font-bold mb-3 mt-12">
             Your accommodation services
           </span>
 
