@@ -141,7 +141,7 @@ const MenuPage = () => {
   return (
     <div className="bg-white min-h-screen">
       {/* ================= FLASH SALE SECTION ================= */}
-      <section className="text-center py-16 relative">
+      <section className="text-center py-16 relative mt-16 ">
         <h2 className="text-3xl font-bold text-orange-500">Flash Sale!!</h2>
         <p className="text-lg text-gray-600 mt-2">Diskon hingga 25%</p>
 
@@ -187,9 +187,9 @@ const MenuPage = () => {
       </section>
 
       {/* ================= VILLA SECTION ================= */}
-      <section className="py-16 bg-white">
-        <div className="text-center mb-8">
-          <h2 className="flex items-center justify-center text-2xl font-bold text-orange-500 mb-2">
+      <section className="py-14 bg-white -mt-4">
+        <div className="text-center mb-6">
+          <h2 className="flex items-center justify-center text-2xl font-bold text-orange-500 mb-1 -mt-2">
             <Home className="mr-2 w-6 h-6 text-orange-500" />
             Villa
           </h2>

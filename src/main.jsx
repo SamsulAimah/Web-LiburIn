@@ -8,6 +8,8 @@ import RegisterPage from './pages/register';
 import NotFound from './pages/error';
 import HomePage from './pages/home';
 import MenuPage from './pages/menu';
+import BlogPage from './pages/blog';
+import ContactPage from './pages/contact';
 import Layout from './components/Layout/Layouts'; // Import Layout Component
 
 const router = createBrowserRouter([
@@ -33,6 +35,22 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <MenuPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/blog",
+    element: (
+      <Layout>
+        <BlogPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <Layout>
+        <ContactPage />
       </Layout>
     ),
   },
